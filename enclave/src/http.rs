@@ -32,7 +32,7 @@ impl TCPServer {
             for stream in listener.incoming() {
                 match stream {
                     Ok(mut stream) => {
-                        println!(&"[+] Request received:\n");
+                        println!("{}", &"[+] Request received:\n");
 
                         let mut input_data = Vec::<f32>::new();
                         let mut buffer = [0; 1024];

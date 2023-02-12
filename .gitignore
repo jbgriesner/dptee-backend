@@ -2,3 +2,14 @@ app/target/
 enclave/target/
 app/Cargo.lock
 enclave/Cargo.lock
+Enclave_u.c
+Enclave_u.h
+Enclave_u.o
+libEnclave_u.a
+libenclave.a
+bin/app
+Enclave_t.c
+Enclave_t.h
+Enclave_t.o
+enclave.so
+enclave.signed.so

@@ -1,10 +1,10 @@
 [package]
-name = "Helloworldsampleenclave"
+name = "tcp_server_enclave"
 version = "1.0.0"
 authors = ["The Teaclave Authors"]
 
 [lib]
-name = "helloworldsampleenclave"
+name = "tcp_server_enclave"
 crate-type = ["staticlib"]
 
 [features]
@@ -16,6 +16,7 @@ net2 = { git = "https://github.com/mesalock-linux/net2-rs-sgx" }
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
 sgx_tstd = { git = "https://github.com/apache/teaclave-sgx-sdk.git", features = ["net"] }
 sgx_types = { git = "https://github.com/apache/teaclave-sgx-sdk.git" }
+sgx_rand = { git = "https://github.com/apache/teaclave-sgx-sdk.git" }
 
 [patch.'https://github.com/apache/teaclave-sgx-sdk.git']
 sgx_align_struct_attribute = { path = "../../../sgx_align_struct_attribute" }

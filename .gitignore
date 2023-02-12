@@ -1,0 +1,4 @@
+app/target/
+enclave/target/
+app/Cargo.lock
+enclave/Cargo.lock
